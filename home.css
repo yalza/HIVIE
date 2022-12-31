@@ -90,7 +90,7 @@ header {
 
 .nav__list-enter {
   border-bottom: #fdc029 0.7rem solid;
-  color: #fdc029;
+  color: #fdc029 !important;
   padding-bottom: 1.3rem;
   border-bottom: 10x solid #fdc029;
   border-radius: 0px 0px 50px 50x;
