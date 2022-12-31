@@ -212,3 +212,34 @@ for (let i = 0; i < listItems.length; i++) {
     }
   });
 }
+
+// popup movie detail
+
+var listMovies = document.querySelectorAll(".conn .item__movie a");
+
+for (let i = 0; i < listMovies.length; i++) {
+  listMovies[i].addEventListener("click", function () {
+    document.querySelector(".overlay").classList.remove("hidden");
+    document.querySelector(".movie__detail").classList.remove("hidden");
+    document.querySelector("html").classList.add("fix");
+  });
+
+  document.querySelector(".overlay").addEventListener("click", function () {
+    document.querySelector(".overlay").classList.add("hidden");
+    document.querySelector(".movie__detail").classList.add("hidden");
+    document.querySelector("html").classList.remove("fix");
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !listMovies[i].classList.contains("hidden")) {
+      document.querySelector(".overlay").classList.add("hidden");
+      document.querySelector(".movie__detail").classList.add("hidden");
+      document.querySelector("html").classList.remove("fix");
+    }
+  });
+}
+
+
+var popup = document.getElementsByClassName('movie__detail');
+
+popup[0].scrollTop = y;
