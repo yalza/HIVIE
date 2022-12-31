@@ -592,16 +592,17 @@ dd:hover {
   place-items: center;
   border-radius: 15px;
   box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.5);
-  transition: 0.25s ease-in;
+  transition: 1s ease-in;
   z-index: 2;
   visibility: hidden;
+
 }
 
 .go-top i {
   font-size: 2rem;
 }
 
-.active {
+.go-top.active {
   visibility: visible;
 }
 
