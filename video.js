@@ -79,3 +79,11 @@ document.addEventListener("keydown", function (e) {
 document.querySelector(".back__video i").addEventListener("click", function () {
   history.back();
 });
+
+const goTopBtn = document.querySelector(".go-top");
+
+window.addEventListener("scroll", function () {
+  window.scrollY >= 500
+    ? goTopBtn.classList.add("active")
+    : goTopBtn.classList.remove("active");
+});
