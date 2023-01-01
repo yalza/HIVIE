@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    height: 830px;
+    position: relative;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 1)
+      ),
+      url(assets/imgs/Avatar\ poster.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+
+.new__movie{
+    margin-top: 38rem;
+}
+
+.watched__movie{
+    margin-top: 20rem;
+}

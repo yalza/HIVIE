@@ -915,12 +915,13 @@ dd:hover {
   line-height: 19px;
   margin-bottom: 0rem;
   color: #ffffff;
+  transition: 1s;
 }
 
-.dt1 p{
+.dt1 p {
   margin-bottom: 5rem;
 }
 
-.dt3 p:first-child{
+.dt3 p:first-child {
   margin-bottom: 10rem;
 }
