@@ -252,6 +252,7 @@ a:link {
 #btnControl2-2 + label > i,
 #btnControl3-2 + label > i {
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #btnControl1-1:checked + label > span,
