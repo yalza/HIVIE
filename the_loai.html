@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HIVIE</title>
+
+        <!-- CSS FILE -->
+        <link rel="stylesheet" href="./assets/css/the_loai.css">
+        <link rel="stylesheet" href="./assets/css/navbar.css">
+        <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="./assets/css/push_to_top.css">
+
+        <!-- ICON -->
+        <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css">
+        <link
+        rel="stylesheet"
+        href="assets/icon/fontawesome-free-6.2.0-web/css/all.css"
+        />
+        <link
+        rel="shortcut icon"
+        href="assets/image/logo.png"
+        type="image/svg+xml"
+        />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+    </head>
+    <body>
+        <div id="main">
+            <!-- HEADER -->
+            <header>
+                <div class="header__navbar">
+                  <div class="nav__left">
+                    <a class="nav__left-logo" href="#">
+                      <img src="assets/image/logo.png" alt="" />
+                    </a>
+                    <ul class="nav__left-list">
+                      <li><a href="#">Trang chủ</a></li>
+                      <li><a class="nav__list-enter" href="#">Phim lẻ</a></li>
+                      <li><a href="#">Phim bộ</a></li>
+                      <li><a href="#">BXH</a></li>
+                    </ul>
+                  </div>
+                  <div class="nav__center">
+                    <a href="#">
+                      <button class="btn__watch-now">XEM NGAY</button>
+                    </a>
+                  </div>
+                  <div class="nav__right">
+                    <div class="nav__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Tên phim,thể loại,diễn viên,..."
+                      />
+                    </div>
+                    <div class="nav__user">
+                      <img src="assets/image/type__movie1.png" alt="" />
+                      <span class="hidden"></span>
+                      <div class="man__acc hidden">
+                        <div class="acc1">
+                          <a href=""
+                            ><img src="assets/image/type__movie1.png" alt="" />
+                            <span>Tu69</span></a
+                          >
+                        </div>
+                        <div class="acc2">
+                          <a href=""
+                            ><img src="assets/image/type__movie1.png" alt="" />
+                            <span>Tài khoản 2</span></a
+                          >
+                        </div>
+                        <div class="acc3">
+                          <a href=""
+                            ><img src="assets/image/type__movie1.png" alt="" />
+                            <span>Tài khoản 3</span></a
+                          >
+                        </div>
+                        <div class="man">
+                          <a href="">
+                            <i class="fa-solid fa-pen"></i>
+                            <span>Quản lý tải khoản</span></a
+                          >
+                        </div>
+                        <div class="acc">
+                          <a href="">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Tài khoản</span>
+                          </a>
+                        </div>
+                        <div class="can">
+                          <a href="">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Tủ phim</span>
+                          </a>
+                        </div>
+                        <div class="help">
+                          <a href="">
+                            <i class="fa-solid fa-circle-question"></i>
+                            <span>Trợ giúp</span>
+                          </a>
+                        </div>
+                        <a href="" class="log_out">Đăng xuất</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </header>
+            
+            <!-- HERO CONTENT -->
+            <div id="slider">
+                <p class="subnav"> <a class="subnav1" href="#">Phim lẻ</a> / <a class="subnav2" href="#">Thể loại</a></p>
+                <div class="movie-hero-category">
+                    <h1 class="movie-category-title">Giả tưởng</h1>
+                    <p class="movie-category-description">Bối cảnh không có thực thường liên quan đến hiện tượng siêu nhiên</p>
+                </div>         
+            </div>
+
+            <!-- CONTENT -->
+            <div id="content">
+                <div class="movie-category-content">
+                    <div class="search-filter">
+                        <div class="filter-wrap">
+                            <div class="filter">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                                Lọc
+                            </div>   
+                            <ul class="filter-subnav">
+                                <li class="filter-items">
+                                    <input type="checkbox" id="btnControl1-1"/>
+                                    <label class="btn" for="btnControl1-1">
+                                        <span><input type="checkbox" id="btnControl1-2"/>
+                                        <label class="arrow-btn1-1" for="btnControl1-2"><i class="fa fa-arrow-up" aria-hidden="true"></i></label>
+                                        Tên</span>
+                                    </label>                                                       
+                                </li>
+                                <li class="filter-items">
+                                    <input type="checkbox" id="btnControl2-1"/>
+                                    <label class="btn" for="btnControl2-1">
+                                        <span><input type="checkbox" id="btnControl2-2"/>
+                                        <label class="arrow-btn2-1" for="btnControl2-2"><i class="fa fa-arrow-down" aria-hidden="true"></i></label>
+                                        Gần nhất</span>
+                                    </label>
+                               </li>
+                                <li class="filter-items">
+                                    <input type="checkbox" id="btnControl3-1"/>
+                                    <label class="btn" for="btnControl3-1">
+                                        <span><input type="checkbox" id="btnControl3-2"/>
+                                        <label class="arrow-btn3-1" for="btnControl3-2"><i class="fa fa-arrow-up" aria-hidden="true"></i></label>
+                                        Yêu thích</span>
+                                    </label>                           
+                                </li>
+                            </ul>
+                        </div>
+                    </div>        
+                    <div class="movie-category">
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">hành động</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">phiêu lưu</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">hoạt hình</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">kinh dị</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">giật gân</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">cao bồi</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">siêu anh hùng</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">hài hước</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">bi kịch</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">giả tưởng</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">học đường</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">đời thường</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">võ thuật</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">trò chơi</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">viễn tưởng</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">bí ẩn</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">chiến tranh</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">siêu năng lực</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">cổ trang</div>
+                            </a>
+                        </div>
+
+                        <div class="movie-type">
+                            <a href="#">
+                              <img src="assets/image/type__movie1.png" alt="" />
+                              <div class="movie-type-name">kiếm hiệp</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <ul class="movie-pages">
+                        <li class="pages-button"><a href="#" style="color: #000; background-color: #FDC029;">1</a></li>
+                        <li class="pages-button"><a href="#">2</a></li>
+                        <li class="pages-button"><a href="#">></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <footer id="footer">
+                <div class="footer-container">
+                    <div class="rules">
+                        <dl class="rule-items">
+                            <dt>Quy định</dt>
+                            <dd>Điều khoản sử dụng</dd>
+                            <dd>Chính sách và quy định chung</dd>
+                            <dd>Chính sách và quyền riêng tư</dd>
+                            <dd>Chính sách và sở hữu trí tuệ</dd>
+                        </dl>
+                    </div>
+                    <div class="helps">
+                        <dl class="help-items">
+                            <dt>Trợ giúp</dt>
+                            <dd>Trung tâm hỗ trợ</dd>
+                            <dd>FAQS</dd>
+                            <dd>Liên hệ</dd>
+                            <dd>Góp ý</dd>
+                        </dl>
+                    </div>
+                    <div class="logos">
+                        <a href="#"><img class="logo logo1" src="./assets/image/FINAL_Trans-01.png" alt=""></a>
+                        <a href="#"><img class="logo logo2" src="./assets/image/logo-da-thong-bao-voi-bo-cong-thuong.png" alt=""></a>
+                        <a href="#"><img class="logo logo3" src="./assets/image/dmca.png" alt=""></a>
+                    </div>
+                    <ul class="contact-icon">
+                        <li><a class="icon" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><a class="icon" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a class="icon" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a class="icon" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a class="icon" href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </footer>
+    
+            <!-- Push to top btn -->
+            <a href="#top" class="go-top">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+    
+            <!-- JAVASCRIPT -->
+            <script src="./assets/css/navbar.js"></script>
+            <script src="./assets/css/push_to_top.js"></script>
+        </div>
+    </body>
+</html>

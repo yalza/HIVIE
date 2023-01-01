@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    background: black;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+
+a:visited {
+    color: #fff;
+}
+
+a:link {
+    color: #fff;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#main {
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #050607;
+}
+/* HEADER */
+
+/* SLIDER */
+#slider {
+    width: 100%;
+    height: 874px;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1)),
+                     url(/assets/image/chainsaw-man-poster_NoText.webp);
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+}
+
+#slider .subnav {
+    /* margin-top: 46px; */
+    padding: 100px 74px 0 74px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.subnav .subnav1 {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subnav .subnav2 {
+    font-weight: bold;
+    font-size: 32px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#slider .movie-hero-description {
+    width: 100%;
+    padding: 55px 44px;
+    bottom: 70px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+
+.movie-hero-title img {
+    width: 588px;
+}
+
+.movie-hero-subtitle {
+    width: 466px;
+    padding: 0px 20px;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 30px;
+    margin: 0 auto;
+}
+
+.movie-hero-subtitle li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+    margin: 10px 5px 10px 10px;
+    padding-right: 15px;
+}
+
+.movie-hero-subtitle .completed {
+    border: none;
+}
+
+.movie-hero-button,
+.movie-hero-content {
+    padding: 20px 30px;
+}
+
+.movie-hero-content {
+    width: 722px;
+    margin: 10px auto 0 auto;
+    text-align: justify;
+    background-color: rgba(20, 20, 20, 0.8);
+    border-radius: 20px;
+}
+
+.movie-hero-button .movie-hero-watch {
+    font-size: 2rem;
+    padding: 10px 25px;
+    color: #000;
+    font-weight: bold;
+    background-color: #FDC029;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.movie-hero-button .movie-hero-watch:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.movie-hero-watch > span {
+    margin-left: 5px;
+}
+
+
+/* CONTENT */
+
+#content {
+    color: #fff;
+    background-color: #050607;
+    padding-bottom: 188px;
+}
+
+    /* Search - filter START */
+#content .search-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+}
+
+#content .search-wrap {
+    border: 1px solid #fff;
+    border-radius: 30px;
+    width: 315px;
+    background-color: rgba(20, 20, 20, 0.5);
+    margin-left: 55px;
+}
+
+#content .search-icon {
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 2rem;
+}
+
+#content .search-input {
+    outline: none;
+    border: 0;
+    background-color: rgba(20, 20, 20, 0.5);
+    color: #fff;
+    font-size: 16px;
+    width: 80%;
+}
+
+#content .filter-wrap {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 30px;
+    gap: 10px;
+    display: flex;
+}
+
+#content .filter{
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 0 10px;
+    
+}
+
+#content .filter-subnav {
+    display: none;
+    gap: 10px;
+    animation: filterSubFadeIn ease 0.5s;
+}
+
+@keyframes filterSubFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#content .filter-wrap:hover .filter{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+#content .filter-wrap:hover .filter-subnav {
+    display: flex;
+}
+
+.filter-subnav .filter-items > label{
+    color: rgba(173, 171, 171, 0.6);
+    cursor: pointer;
+}
+
+#btnControl1-1, #btnControl1-2,
+#btnControl2-1, #btnControl2-2,
+#btnControl3-1, #btnControl3-2 {
+    display: none;
+}
+
+#btnControl1-2:checked + label > i,
+#btnControl2-2:checked + label > i,
+#btnControl3-2:checked + label > i {
+    transform: rotate(180deg);
+}
+
+#btnControl1-2 + label > i,
+#btnControl2-2 + label > i,
+#btnControl3-2 + label > i {
+    cursor: pointer;
+}
+
+#btnControl1-1:checked + label > span,
+#btnControl2-1:checked + label > span,
+#btnControl3-1:checked + label > span {
+    color: #fff;
+}
+
+
+    /* Search - filter END */
+
+#content .movie-container {
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+    margin: 40px 55px 0;
+}
+
+#content .movie-favorite img {
+    width: 266px;
+}
+
+#content .movie-favorite {
+    position: relative;
+}
+
+.movie-favorite .movie-add-title {
+    position: absolute;
+    color: #fff;
+    font-size: 1.7rem;
+    background-color: rgba(20, 20, 20, 0.8);
+    padding: 10px;
+    bottom: 0;
+    border-top: 2px solid #FDC029;
+    left: 0;
+    right: 0;
+    display: none;
+    animation:  addTitleFadeIn ease 0.5s;
+}
+
+@keyframes addTitleFadeIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.movie-favorite:hover img {
+    opacity: 0.8;
+}
+
+.movie-favorite:hover .movie-add-title {
+    display: inline-block;
+}
+
+.movie-add-title .movie-add-name {
+    float: right;
+    font-weight: bold;
+}
+
+#content .movie-pages {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    margin: 50px 55px 0 0;
+}
+
+.movie-pages li a {
+    background-color: #2B2B2B;
+    border-radius: 9px;
+    margin-left: 10px;
+    padding: 12px 16px;
+}
+
+.movie-pages li:hover a {
+    color: #000;
+    background-color: #FDC029;
+}
+
+
+
+
+
+
+
+
+
+
+
+
