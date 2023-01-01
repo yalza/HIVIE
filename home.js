@@ -246,19 +246,27 @@ for (let i = 0; i < listMovies.length; i++) {
 // movie detail
 
 var list = document.querySelectorAll(".detail-foot-list span");
+var listDt = document.querySelectorAll(".detail-ctn");
 
 for (let i = 0; i < list.length; i++) {
   list[i].addEventListener("click", function () {
     if (list[i].classList.length == 0) {
       list[i].classList.add("detail-foot-item-enter");
+      if (listDt[i].classList.contains("hidden"))
+        listDt[i].classList.remove("hidden");
       for (let j = 0; j < list.length; j++) {
         if (j != i) {
           list[j].classList.remove("detail-foot-item-enter");
+          if (!listDt[j].classList.contains("hidden")) {
+            listDt[j].classList.add("hidden");
+          }
         }
       }
     }
   });
 }
+
+// detail ctn 2
 
 var btnPrev = document.querySelector(
   ".detail-ctn-2 .detail__movie-list .btn-prev"
@@ -285,3 +293,32 @@ btnPrev.addEventListener("click", function () {
     .querySelector(".detail-ctn-2 .detail__movie-list .list-item")
     .prepend(list[list.length - 1]);
 });
+
+// detail ctn 3
+
+var btnPrev = document.querySelector(
+  ".detail-ctn-3 .detail__movie-list .btn-prev"
+);
+var btnNext = document.querySelector(
+  ".detail-ctn-3 .detail__movie-list .btn-next"
+);
+
+btnNext.addEventListener("click", function () {
+  console.log("aaa");
+  var list = document.querySelectorAll(
+    ".detail-ctn-3 .detail__movie-list .item__movie"
+  );
+  document
+    .querySelector(".detail-ctn-3 .detail__movie-list .list-item")
+    .appendChild(list[0]);
+});
+
+btnPrev.addEventListener("click", function () {
+  var list = document.querySelectorAll(
+    ".detail-ctn-3 .detail__movie-list .item__movie"
+  );
+  document
+    .querySelector(".detail-ctn-3 .detail__movie-list .list-item")
+    .prepend(list[list.length - 1]);
+});
+
