@@ -176,6 +176,8 @@ btnPrev.addEventListener("click", function () {
     .prepend(list[list.length - 1]);
 });
 
+//  go top
+
 const goTopBtn = document.querySelector(".go-top");
 
 window.addEventListener("scroll", function () {
@@ -198,7 +200,9 @@ btnUser.addEventListener("mouseleave", function () {
   document.querySelector(".man__acc").classList.add("hidden");
 });
 
-listItems = document.querySelectorAll(".nav__left-list li a");
+// nav bar
+
+var listItems = document.querySelectorAll(".nav__left-list li a");
 
 for (let i = 0; i < listItems.length; i++) {
   listItems[i].addEventListener("click", function () {
@@ -239,7 +243,45 @@ for (let i = 0; i < listMovies.length; i++) {
   });
 }
 
+// movie detail
 
-var popup = document.getElementsByClassName('movie__detail');
+var list = document.querySelectorAll(".detail-foot-list span");
 
-popup[0].scrollTop = y;
+for (let i = 0; i < list.length; i++) {
+  list[i].addEventListener("click", function () {
+    if (list[i].classList.length == 0) {
+      list[i].classList.add("detail-foot-item-enter");
+      for (let j = 0; j < list.length; j++) {
+        if (j != i) {
+          list[j].classList.remove("detail-foot-item-enter");
+        }
+      }
+    }
+  });
+}
+
+var btnPrev = document.querySelector(
+  ".detail-ctn-2 .detail__movie-list .btn-prev"
+);
+var btnNext = document.querySelector(
+  ".detail-ctn-2 .detail__movie-list .btn-next"
+);
+
+btnNext.addEventListener("click", function () {
+  console.log("aaa");
+  var list = document.querySelectorAll(
+    ".detail-ctn-2 .detail__movie-list .item__movie"
+  );
+  document
+    .querySelector(".detail-ctn-2 .detail__movie-list .list-item")
+    .appendChild(list[0]);
+});
+
+btnPrev.addEventListener("click", function () {
+  var list = document.querySelectorAll(
+    ".detail-ctn-2 .detail__movie-list .item__movie"
+  );
+  document
+    .querySelector(".detail-ctn-2 .detail__movie-list .list-item")
+    .prepend(list[list.length - 1]);
+});

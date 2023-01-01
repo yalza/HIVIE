@@ -797,12 +797,93 @@ dd:hover {
   height: 25rem;
 }
 
+.detail-foot span {
+  cursor: pointer;
+}
+
 .detail-foot-item-enter {
   color: #fdc029;
   border-bottom: solid 0.7rem #fdc029;
   padding: 1.3rem 0.5rem;
+  transition: all 0.5s;
 }
 
 .fix {
   overflow: hidden;
+}
+
+/* detail movie 2 */
+
+.detail-ctn-2 {
+  width: 100%;
+  margin-bottom: 20rem;
+}
+
+.part__movie {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+  width: 100%;
+  padding-right: 8rem;
+}
+
+.part__movie select {
+  width: 109px;
+  height: 29px;
+  border-radius: 10rem;
+  background-color: transparent;
+  color: #fff;
+  padding: 0 0.5rem;
+  border: solid #fff 2px;
+  font-size: 1.6rem;
+}
+
+.part__movie .part__item {
+  background-color: black;
+  border: none;
+  outline: none;
+}
+
+.detail__movie-list {
+  margin-top: 5rem;
+  position: relative;
+  z-index: 20;
+}
+
+.detail__movie-list .btn-prev {
+  position: absolute;
+  left: -12.2%;
+}
+
+.detail__movie-list .btn-next {
+  right: -2%;
+}
+
+.detail-ctn-2 .detail__movie-list .item__movie {
+  overflow: initial;
+}
+
+.detail-ctn-2 .detail__movie-list .item__movie img:hover {
+  transform: scale(1);
+}
+
+.detail-ctn-2 .detail__movie-list .item__movie .name-title {
+  display: flex;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  justify-content: space-between;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+.detail-ctn-2 .detail__movie-list .item__movie p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
