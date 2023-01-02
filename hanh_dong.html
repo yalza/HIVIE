@@ -7,30 +7,28 @@
     <title>HIVIE</title>
 
     <!-- CSS FILE -->
-    <link rel="stylesheet" href="./assets/css/tu_phim.css">
+    <link rel="stylesheet" href="./assets/css/hanh_dong.css">
     <link rel="stylesheet" href="./assets/css/navbar.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
     <link rel="stylesheet" href="./assets/css/push_to_top.css">
 
     <!-- ICON -->
     <link
-      rel="stylesheet"
-      href="assets/font/fontawesome-free-6.2.0-web/css/all.css"
+    rel="stylesheet"
+    href="assets/font/fontawesome-free-6.2.0-web/css/all.css"
     />
     <link
-      rel="shortcut icon"
-      href="assets/image/logo.png"
-      type="image/svg+xml"
+    rel="shortcut icon"
+    href="assets/image/logo.png"
+    type="image/svg+xml"
     />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
 </head>
 <body>
     <div id="main">
-        
         <!-- HEADER -->
         <header>
             <div class="header__navbar">
@@ -40,7 +38,7 @@
                 </a>
                 <ul class="nav__left-list">
                   <li><a href="index.html">Trang chủ</a></li>
-                  <li><a href="phimle.html">Phim lẻ</a></li>
+                  <li><a class="nav__list-enter" href="phimle.html">Phim lẻ</a></li>
                   <li><a href="#">Phim bộ</a></li>
                   <li><a href="#">BXH</a></li>
                 </ul>
@@ -111,48 +109,20 @@
                 </div>
               </div>
             </div>
-          </header>
-
-        <!-- SLIDER -->
+        </header>
+        
+        <!-- HERO CONTENT -->
         <div id="slider">
-            <p class="subnav"> <a class="subnav1" href="index.html">Trang chủ</a> / <a class="subnav2" href="#">Tủ phim</a></p>
-            <div class="movie-hero-description center">
-                <div class="movie-hero-title">
-                    <img src="/assets/image/Chainsaw_Man.webp" alt="Chainsaw_Man">
-                 </div>
-                 <ul class="movie-hero-subtitle">
-                    <li class="rank">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </li>
-                    <li class="year">2022</li>
-                    <li class="season">Phần 1</li>
-                    <li class="completed">Hoàn thành</li>
-                 </ul>
-                 <div class="movie-hero-content">
-                    Denji có một ước mơ đơn giản - sống một cuộc sống hạnh phúc và yên bình, dành thời gian cho một cô gái mà anh ấy thích. Tuy nhiên, điều này khác xa so với thực tế. Cậu thiếu niên Denji sống một cuộc sống nghèo khổ và phải làm việc vất vả để trả nợ. Cậu vừa sống vừa làm Thợ Săn Quỷ cùng với Pochita - loài quỷ Chainsaw...
-                 </div>
-                 <div class="movie-hero-button">
-                    <a href="video.html" class="movie-hero-watch"> 
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                        <span>Xem ngay</span> 
-                    </a>
-                </div>
-            </div>
-           
+            <p class="subnav"> <a class="subnav1" href="phimle.html">Phim lẻ</a> / <a class="subnav1" href="the_loai.html">Thể loại</a> / <a class="subnav2" href="#">Hành động</a></p>
+            <div class="movie-hero-category">
+                <h1 class="movie-category-title">Hành động</h1>
+                <p class="movie-category-description">Sự đối đầu giữa "cái thiện" và "cái ác" với những cuộc chiến ác liệt bằng tay không hoặc vũ khí, tiết tấu nhanh và kỹ xảo điện ảnh cao</p>
+            </div>         
         </div>
 
         <!-- CONTENT -->
         <div id="content">
             <div class="search-filter">
-                <div class="search-wrap">
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
-                    <input type="text" id="search" class="search-input" placeholder="Tên phim, thể loại, diễn viên">
-                </div>
-
                 <div class="filter-wrap">
                     <div class="filter">
                         <i class="fa fa-filter" aria-hidden="true"></i>
@@ -185,7 +155,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </div>        
 
             <div class="movie-container">
                 <div class="movie-favorite">
@@ -393,10 +363,7 @@
                 <li class="pages-button"><a href="#" style="color: #000; background-color: #FDC029;">1</a></li>
                 <li class="pages-button"><a href="#">2</a></li>
                 <li class="pages-button"><a href="#">3</a></li>
-                <li class="pages-button"><a href="#">4</a></li>
-                <li class="pages-button"><a href="#">5</a></li>
                 <li class="pages-button"><a href="#">></a></li>
-                <li class="pages-button"><a href="#">>></a></li>
             </ul>
         </div>
 
@@ -440,10 +407,10 @@
         <a href="#top" class="go-top">
             <i class="fa-solid fa-chevron-up"></i>
         </a>
-    </div>
 
-    <!-- JAVASCRIPT -->
-    <script src="./assets/css/navbar.js"></script>
-    <script src="./assets/css/push_to_top.js"></script>
+        <!-- JAVASCRIPT -->
+        <script src="./assets/css/navbar.js"></script>
+        <script src="./assets/css/push_to_top.js"></script>
+    </div>
 </body>
 </html>
