@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="./assets/css/navbar.css">
         <link rel="stylesheet" href="./assets/css/footer.css">
         <link rel="stylesheet" href="./assets/css/push_to_top.css">
+        <link rel="stylesheet" href="./assets/css/signInUp.css">
 
         <!-- ICON -->
         <link
@@ -40,7 +41,7 @@
                     <ul class="nav__left-list">
                       <li><a href="index.html">Trang chủ</a></li>
                       <li><a class="nav__list-enter" href="phimle.html">Phim lẻ</a></li>
-                      <li><a href="#">Phim bộ</a></li>
+                      <li><a href="phim_bo.html">Phim bộ</a></li>
                       <li><a href="#">BXH</a></li>
                     </ul>
                   </div>
@@ -76,19 +77,19 @@
                           >
                         </div>
                         <div class="acc3">
-                          <a href=""
+                          <a href="#"
                             ><img src="assets/image/type__movie1.png" alt="" />
                             <span>Tài khoản 3</span></a
                           >
                         </div>
                         <div class="man">
-                          <a href="">
+                          <a href="#">
                             <i class="fa-solid fa-pen"></i>
-                            <span>Quản lý tải khoản</span></a
+                            <span>Thêm tài khoản</span></a
                           >
                         </div>
                         <div class="acc">
-                          <a href="">
+                          <a href="#">
                             <i class="fa-solid fa-user"></i>
                             <span>Tài khoản</span>
                           </a>
@@ -100,12 +101,12 @@
                           </a>
                         </div>
                         <div class="help">
-                          <a href="">
+                          <a href="#">
                             <i class="fa-solid fa-circle-question"></i>
                             <span>Trợ giúp</span>
                           </a>
                         </div>
-                        <a href="" class="log_out">Đăng xuất</a>
+                        <a href="#" class="log_out">Đăng xuất</a>
                       </div>
                     </div>
                   </div>
@@ -345,15 +346,64 @@
                     </ul>
                 </div>
             </footer>
-    
+            
+            <div class="overlay hidden"></div>
+
+            <!-- sign In - sign Up -->
+            <div class="log__in hidden">
+              <h2>ĐĂNG NHẬP</h2>
+              <p>Tên tài khoản/Email</p>
+              <input type="text" placeholder="Nhập..." />
+              <p>Mật khẩu</p>
+              <input type="text" placeholder="Nhập..." />
+              <div class="save__infor">
+                <div class="check">
+                  <input type="checkbox" name="" id="" />
+                  <span>Lưu mật khẩu</span>
+                </div>
+                <span>Quên mật khẩu?</span>
+              </div>
+        
+              <div class="log-in-btn">
+                <a href="index.html"><button>ĐĂNG NHẬP</button></a>
+                <span>hoặc</span>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <p class="cctk">Bạn chưa có tài khoản?</p>
+              <h3>ĐĂNG KÝ NGAY</h3>
+            </div>
+        
+            <div class="sig__up hidden">
+              <h2>ĐĂNG KÝ</h2>
+              <p>Tên tài khoản</p>
+              <input type="text" placeholder="Nhập..." />
+              <p>Email</p>
+              <input type="text" placeholder="Nhập..." />
+              <p>Mật khẩu</p>
+              <input type="text" placeholder="Nhập..." />
+              <p>Nhập lại mật khẩu</p>
+              <input type="text" placeholder="Nhập..." />
+        
+              <div class="sig-up-btn">
+                <a href="index.html"><button>ĐĂNG KÝ</button></a>
+                <span>hoặc</span>
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+            
             <!-- Push to top btn -->
             <a href="#top" class="go-top">
                 <i class="fa-solid fa-chevron-up"></i>
             </a>
     
-            <!-- JAVASCRIPT -->
-            <script src="./assets/css/navbar.js"></script>
-            <script src="./assets/css/push_to_top.js"></script>
-        </div>
-    </body>
+          </div> 
+          <!-- JAVASCRIPT -->
+          <script src="./assets/css/navbar.js"></script>
+          <script src="./assets/css/push_to_top.js"></script>
+          <script src="./assets/css/signInUp.js"></script>
+    </body>     
 </html>

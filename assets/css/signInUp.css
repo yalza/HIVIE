@@ -1,0 +1,231 @@
+/* log in */
+.hidden {
+    display: none !important;
+  }
+
+.fix {
+    overflow-y: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    backdrop-filter: blur(5px);
+  }
+
+.log__in {
+    position: fixed;
+    z-index: 30;
+    width: 400px;
+    height: 441px;
+    background: #050607;
+    border-width: 3px 0px;
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: #fdc029;
+    border-radius: 15px;
+  }
+  
+  .log__in h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #fdc029;
+    text-align: center;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  .log__in > p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    margin-left: 3.2rem;
+    color: #ffffff;
+  }
+  
+  .log__in > input {
+    width: 336px;
+    height: 31px;
+    left: 0px;
+    top: 23px;
+    background: #1b1b1b;
+    border: none;
+    border-radius: 7px;
+    margin-left: 3.2rem;
+    margin-top: 5px;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    color: #fff;
+  }
+  
+  .log__in > input:focus {
+    border: 1px solid #fdc029;
+  }
+  
+  .save__infor {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+  
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3.2rem;
+  }
+  
+  .save__infor input {
+    background: #ffffff;
+    border-radius: 4x;
+  }
+  .log-in-btn {
+    margin: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .log-in-btn button {
+    width: 158px;
+    height: 40px;
+    left: 0px;
+    bottom: 0px;
+  
+    background: #fdc029;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #050607;
+  }
+  
+  .log-in-btn span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b3b3b3;
+  }
+  
+  .log-in-btn i {
+    color: #ffffff;
+    font-size: 3rem;
+    border-radius: 50%;
+  }
+  
+  .log__in h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fdc029;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .cctk {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b3b3b3;
+    text-align: center;
+    margin: 0 3.2rem;
+  }
+  
+  /* sig up */
+  
+  .sig__up {
+    position: fixed;
+    z-index: 400;
+    width: 400px;
+    height: 441px;
+    background: #050607;
+    border-width: 3px 0px;
+    border-style: solid;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-color: #fdc029;
+    border-radius: 15px;
+  }
+  
+  .sig__up h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    color: #fdc029;
+    text-align: center;
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+  }
+  
+  .sig__up p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    margin-left: 3.2rem;
+    color: #ffffff;
+  }
+  
+  
+  .sig__up > input {
+    width: 336px;
+    height: 31px;
+    left: 0px;
+    top: 23px;
+    background: #1b1b1b;
+    border: none;
+    border-radius: 7px;
+    margin-left: 3.2rem;
+    margin-top: 5px;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    color: #fff;
+  }
+  
+  .sig-up-btn {
+    margin: 0 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sig-up-btn button {
+    width: 158px;
+    height: 40px;
+    left: 0px;
+    bottom: 0px;
+  
+    background: #fdc029;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #050607;
+  }
+  
+  .sig-up-btn span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b3b3b3;
+  }
+  
+  .sig-up-btn i {
+    color: #ffffff;
+    font-size: 3rem;
+    border-radius: 50%;
+  }
