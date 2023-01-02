@@ -45,20 +45,20 @@ btnPrev.addEventListener("click", function () {
     .prepend(list[list.length - 1]);
 });
 
-var btnPrev = document.querySelector(".type__movie .btn-prev");
-var btnNext = document.querySelector(".type__movie .btn-next");
+var btnPrev = document.querySelector(".type__movie-type .btn-prev");
+var btnNext = document.querySelector(".type__movie-type .btn-next");
 
 
 
 btnNext.addEventListener("click", function () {
-  var list = document.querySelectorAll(".type__movie .item__movie");
-  document.querySelector(".type__movie .list-item").appendChild(list[0]);
+  var list = document.querySelectorAll(".type__movie-type .item__movie");
+  document.querySelector(".type__movie-type .list-item").appendChild(list[0]);
 });
 
 btnPrev.addEventListener("click", function () {
-  var list = document.querySelectorAll(".type__movie .item__movie");
+  var list = document.querySelectorAll(".type__movie-type .item__movie");
   document
-    .querySelector(".type__movie .list-item")
+    .querySelector(".type__movie-type .list-item")
     .prepend(list[list.length - 1]);
 });
 
