@@ -977,6 +977,7 @@ dd:hover {
   margin-top: 5px;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
+  color: #fff;
 }
 
 .log__in > input:focus {
@@ -1104,6 +1105,7 @@ dd:hover {
   margin-top: 5px;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
+  color: #fff;
 }
 
 .sig-up-btn {
