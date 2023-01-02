@@ -241,6 +241,11 @@ a:link {
 #btnControl3-1, #btnControl3-2 {
     display: none;
 }
+#btnControl1-1, #btnControl1-2,
+#btnControl2-1, #btnControl2-2,
+#btnControl3-1, #btnControl3-2 {
+    display: none;
+}
 
 #btnControl1-2:checked + label > i,
 #btnControl2-2:checked + label > i,
@@ -252,13 +257,13 @@ a:link {
 #btnControl2-2 + label > i,
 #btnControl3-2 + label > i {
     cursor: pointer;
-    transition: 0.5s;
 }
 
 #btnControl1-1:checked + label > span,
 #btnControl2-1:checked + label > span,
 #btnControl3-1:checked + label > span {
     color: #fff;
+    transition: 0.2s;
 }
 
 
