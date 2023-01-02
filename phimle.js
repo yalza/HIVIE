@@ -28,8 +28,6 @@ btnPrev.addEventListener("click", function () {
 
 console.log(btnPrev.length);
 
-
-
 var btnPrev = document.querySelector(".new__movie .btn-prev");
 var btnNext = document.querySelector(".new__movie .btn-next");
 
@@ -45,20 +43,18 @@ btnPrev.addEventListener("click", function () {
     .prepend(list[list.length - 1]);
 });
 
-var btnPrev = document.querySelector(".type__movie .btn-prev");
-var btnNext = document.querySelector(".type__movie .btn-next");
-
-
+var btnPrev = document.querySelector(".type__movie-type .btn-prev");
+var btnNext = document.querySelector(".type__movie-type .btn-next");
 
 btnNext.addEventListener("click", function () {
-  var list = document.querySelectorAll(".type__movie .item__movie");
-  document.querySelector(".type__movie .list-item").appendChild(list[0]);
+  var list = document.querySelectorAll(".type__movie-type .item__movie");
+  document.querySelector(".type__movie-type .list-item").appendChild(list[0]);
 });
 
 btnPrev.addEventListener("click", function () {
-  var list = document.querySelectorAll(".type__movie .item__movie");
+  var list = document.querySelectorAll(".type__movie-type .item__movie");
   document
-    .querySelector(".type__movie .list-item")
+    .querySelector(".type__movie-type .list-item")
     .prepend(list[list.length - 1]);
 });
 
@@ -311,4 +307,31 @@ btnPrev.addEventListener("click", function () {
   document
     .querySelector(".detail-ctn-3 .detail__movie-list .list-item")
     .prepend(list[list.length - 1]);
+});
+
+//  log in sig up
+
+var addAcc = document.querySelector(".man");
+var overlay = document.querySelector(".overlay");
+var logIn = document.querySelector(".log__in");
+var sigUp = document.querySelector(".sig__up");
+var btnLogIn = document.querySelector(".log__in h3");
+var btnSigUp = document.querySelector(".sig-up-btn button");
+var htmlA = document.querySelector("html");
+
+addAcc.addEventListener("click", function () {
+  overlay.classList.remove("hidden");
+  logIn.classList.remove("hidden");
+  htmlA.classList.add("fix");
+});
+btnLogIn.addEventListener("click", function () {
+  logIn.classList.add("hidden");
+  sigUp.classList.remove("hidden");
+});
+
+overlay.addEventListener("click", function () {
+  overlay.classList.add("hidden");
+  htmlA.classList.remove("fix");
+  if (!logIn.classList.contains("hidden")) logIn.classList.add("hidden");
+  if (!sigUp.classList.contains("hidden")) sigUp.classList.add("hidden");
 });
