@@ -350,3 +350,5 @@ overlay.addEventListener("click", function () {
   if (!logIn.classList.contains("hidden")) logIn.classList.add("hidden");
   if (!sigUp.classList.contains("hidden")) sigUp.classList.add("hidden");
 });
+
+
