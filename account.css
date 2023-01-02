@@ -506,7 +506,7 @@ dd:hover {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* container */
@@ -541,6 +541,12 @@ dd:hover {
 .acc__nav span {
   margin-right: 3rem;
   padding-bottom: 1.4rem;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.acc__nav span:hover{
+  color: #fff;
 }
 
 .acc__nav-enter {
@@ -608,7 +614,7 @@ dd:hover {
   margin-top: 5rem;
 }
 
-.container__ctn-2 .conn{
+.container__ctn-2 .conn {
   display: flex;
 }
 
@@ -671,11 +677,148 @@ dd:hover {
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 0.5rem;
-  
+
   color: #050607;
 }
 
 /* ctn 3 */
 
+.container__ctn-3 {
+  width: 100%;
+  height: 399px;
+  left: 44px;
+  top: 328px;
+  margin-top: 5rem;
+  background: #141414;
+  padding: 4.4rem 14.3rem;
+}
+
+.history {
+  margin-top: 3rem;
+  display: flex;
+  overflow: auto;
+}
+
+.ctn-title span:first-child {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+.ctn-title span:last-child {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.ctn-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* history */
+.item {
+  width: 24rem;
+  margin-right: 3rem;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.item p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fdc029;
+  border-radius: 10px;
+}
+
+/* ctn 4 */
+
+.container__ctn-4 {
+  width: 100%;
+  height: 282px;
+  left: 44px;
+  top: 328px;
+
+  background: #141414;
+  border-radius: 13px;
+  padding: 4.4rem 14.3rem;
+}
+
+.container__ctn-4 > p > span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.container__ctn-4 > p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
+
+.container__ctn-4 > span {
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 95rem;
+
+  color: rgba(255, 255, 255, 0.7);
+
+}
 
 
+
+
+
+.fix{
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  backdrop-filter: blur(5px);
+}
