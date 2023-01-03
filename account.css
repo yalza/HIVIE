@@ -752,6 +752,10 @@ dd:hover {
   margin-top: 1rem;
 }
 
+.item img {
+  width: 240px;
+}
+
 /* custom scrollbar */
 
 ::-webkit-scrollbar {
