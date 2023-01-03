@@ -84,6 +84,10 @@ header {
   margin-right: 3rem;
 }
 
+.nav__left-list a:hover {
+  color: #fff;
+}
+
 .nav__list-enter {
   border-bottom: #fdc029 0.7rem solid;
   color: #fdc029 !important;

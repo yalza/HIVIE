@@ -28,6 +28,7 @@ a {
 
 button:hover {
   opacity: 0.8;
+  cursor: pointer;
 }
 
 /* -------------------Header---------------------- */
@@ -88,6 +89,10 @@ header {
   line-height: 55px;
   color: rgba(255, 255, 255, 0.5);
   margin-right: 3rem;
+}
+
+.nav__left-list a:hover {
+  color: #fff;
 }
 
 .nav__list-enter {
