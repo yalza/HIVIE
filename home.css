@@ -192,7 +192,6 @@ header {
   margin-left: 6rem;
 }
 
-
 .nav__search > i {
   font-size: 2rem;
   padding: 0.5rem;
@@ -626,6 +625,28 @@ dd:hover {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 5;
   backdrop-filter: blur(5px);
+}
+
+.detail-ctn-1 {
+  position: relative;
+}
+
+.ctn-1-ratting {
+  position: absolute;
+  right: 0;
+  transform: translateX(120%);
+}
+
+.ctn-1-ratting > span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.ctn-1-ratting i{
+  font-size: 2rem;
+  margin-top: 2rem;
 }
 
 .movie__detail {
@@ -1096,7 +1117,6 @@ dd:hover {
   color: #ffffff;
 }
 
-
 .sig__up > input {
   width: 336px;
   height: 31px;
@@ -1145,7 +1165,6 @@ dd:hover {
   border-radius: 50%;
 }
 
-
 /* custom scrollbar */
 
 ::-webkit-scrollbar {
@@ -1162,6 +1181,6 @@ dd:hover {
 }
 
 /* tu phim */
-.cccc{
+.cccc {
   color: green !important;
 }
