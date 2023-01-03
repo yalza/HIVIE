@@ -271,7 +271,6 @@ a:link {
 #btnControl2-1:checked + label > span,
 #btnControl3-1:checked + label > span {
   color: #fff;
-  transition: 0.2s;
 }
 
 /* Search - filter END */
