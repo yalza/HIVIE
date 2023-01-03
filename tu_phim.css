@@ -59,7 +59,7 @@ a:link {
       rgba(0, 0, 0, 0) 80%,
       rgba(0, 0, 0, 1) 
     ),
-    url(/assets/image/chainsaw-man-poster_NoText.webp);
+    url(assets/image/chainsaw-man-poster_NoText.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -138,7 +138,6 @@ a:link {
   font-weight: bold;
   background-color: #fdc029;
   border-radius: 20px;
-  margin-right: 20px;
 }
 
 .movie-hero-button .movie-hero-watch:hover {

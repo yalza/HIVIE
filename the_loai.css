@@ -58,7 +58,7 @@ a:link {
         rgba(0, 0, 0, 0) 80% , 
         rgba(0, 0, 0, 1)
         ),
-        url(/assets/image/harry-potter.png);
+        url(assets/image/harry-potter.png);
     background-repeat:  no-repeat;
     background-position: center;
     background-size: cover;
