@@ -131,7 +131,7 @@ header {
 
 .man__acc {
   width: 182px;
-  height: 327px;
+  height: 243x;
   position: absolute;
   background: #050607;
   border-bottom: 3px solid #fdc029;
@@ -545,7 +545,7 @@ dd:hover {
   margin-right: 3rem;
   padding-bottom: 1.4rem;
   cursor: pointer;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .acc__nav span:hover {
