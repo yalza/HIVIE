@@ -273,16 +273,21 @@ a:link {
     margin: 50px 55px 0 0;
 }
 
-.movie-pages li a {
-    background-color: #2B2B2B;
+.movie-pages li span {
+    background-color: #2b2b2b;
     border-radius: 9px;
     margin-left: 10px;
     padding: 12px 16px;
+    cursor: pointer;
 }
-
-.movie-pages li:hover a {
+  
+.pages {
+    display: none;
+}
+  
+.pages:checked + label > span {
     color: #000;
-    background-color: #FDC029;
+    background-color: #fdc029;
 }
 
 /* custom scrollbar */
