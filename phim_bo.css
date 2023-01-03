@@ -7,7 +7,7 @@ header {
         rgba(0, 0, 0, 0) 80%,
         rgba(0, 0, 0, 1)
       ),
-      url(../image/sherlock.png);
+      url(assets/image/sherlock.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
