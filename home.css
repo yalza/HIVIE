@@ -433,6 +433,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  border-top:2px solid #fdc029;
 
   transition: 0.5s;
   font-weight: 700;
