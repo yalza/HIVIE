@@ -352,3 +352,10 @@ overlay.addEventListener("click", function () {
 });
 
 
+// tuphim btn
+
+document.querySelector(".header__ctn-btn-canbinet").addEventListener("click",function(){
+  document.querySelector(".header__ctn-btn-canbinet i").classList.toggle("fa-plus");
+  document.querySelector(".header__ctn-btn-canbinet i").classList.toggle("fa-check");
+  document.querySelector(".header__ctn-btn-canbinet i").classList.toggle("cccc")
+})

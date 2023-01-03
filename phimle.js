@@ -335,3 +335,11 @@ overlay.addEventListener("click", function () {
   if (!logIn.classList.contains("hidden")) logIn.classList.add("hidden");
   if (!sigUp.classList.contains("hidden")) sigUp.classList.add("hidden");
 });
+
+// tuphim btn
+
+document.querySelector(".header__ctn-btn-canbinet").addEventListener("click",function(){
+  document.querySelector(".header__ctn-btn-canbinet i").classList.toggle("fa-plus");
+  document.querySelector(".header__ctn-btn-canbinet i").classList.toggle("fa-check");
+  document.querySelector(".header__ctn-btn-canbinet i").classList.toggle("cccc")
+})
