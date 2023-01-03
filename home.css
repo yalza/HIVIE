@@ -616,6 +616,13 @@ dd:hover {
 
 /* -------------Movie Detail--------------- */
 
+.detail-ctn-2 .item__movie:hover{
+  opacity: 0.7;
+}
+.detail-ctn-3 .item__movie:hover{
+  opacity: 0.7;
+}
+
 .overlay {
   position: absolute;
   top: 0;
