@@ -181,7 +181,6 @@ header {
   top: 13px;
   display: flex;
   background: #1d2328;
-  border: 1px solid #fdc029;
   border-radius: 15px;
   margin-left: 6rem;
 }
@@ -549,13 +548,14 @@ dd:hover {
   transition: all 1s;
 }
 
-.acc__nav span:hover{
+.acc__nav span:hover {
   color: #fff;
 }
 
 .acc__nav-enter {
   border-bottom: 1.5rem solid #fdc029;
   border-radius: 0 0 1rem 1rem;
+  color: #fdc029;
 }
 
 .container__ctn-1 {
@@ -805,14 +805,9 @@ dd:hover {
   margin-left: 95rem;
 
   color: rgba(255, 255, 255, 0.7);
-
 }
 
-
-
-
-
-.fix{
+.fix {
   overflow: hidden;
 }
 
