@@ -339,7 +339,7 @@ dd:hover {
   left: 0px;
   top: 23px;
   background: #1b1b1b;
-  border: none;
+  outline: #fdc029;
   border-radius: 7px;
   margin-left: 3.2rem;
   margin-top: 5px;
@@ -466,13 +466,16 @@ dd:hover {
   left: 0px;
   top: 23px;
   background: #1b1b1b;
-  border: none;
+  outline: #fdc029;
   border-radius: 7px;
   margin-left: 3.2rem;
   margin-top: 5px;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   color: #fff;
+}
+.sig__up > input:focus{
+  border: 1px solid #fdc029 !important;
 }
 
 .sig-up-btn {
@@ -642,9 +645,12 @@ dd:hover {
   margin-right: 2.4rem;
 }
 
-.mounth button:hover,
-.year:hover button{
+.mounth button:hover{
   background: #FDC029;
+}
+
+.year button:hover{
+  background: #ff008f;
 }
 
 .mounth button,

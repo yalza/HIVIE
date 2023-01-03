@@ -616,10 +616,10 @@ dd:hover {
 
 /* -------------Movie Detail--------------- */
 
-.detail-ctn-2 .item__movie:hover{
+.detail-ctn-2 .item__movie:hover {
   opacity: 0.7;
 }
-.detail-ctn-3 .item__movie:hover{
+.detail-ctn-3 .item__movie:hover {
   opacity: 0.7;
 }
 
@@ -651,7 +651,7 @@ dd:hover {
   color: #ffffff;
 }
 
-.ctn-1-ratting i{
+.ctn-1-ratting i {
   font-size: 2rem;
   margin-top: 2rem;
 }
@@ -1003,7 +1003,7 @@ dd:hover {
   left: 0px;
   top: 23px;
   background: #1b1b1b;
-  border: none;
+  outline: #fdc029;
   border-radius: 7px;
   margin-left: 3.2rem;
   margin-top: 5px;
@@ -1013,7 +1013,7 @@ dd:hover {
 }
 
 .log__in > input:focus {
-  border: 1px solid #fdc029;
+  border: 1px solid #fdc029 !important;
 }
 
 .save__infor {
@@ -1130,13 +1130,16 @@ dd:hover {
   left: 0px;
   top: 23px;
   background: #1b1b1b;
-  border: none;
+  outline: #fdc029;
   border-radius: 7px;
   margin-left: 3.2rem;
   margin-top: 5px;
   margin-bottom: 1.5rem;
   padding-left: 1rem;
   color: #fff;
+}
+.sig__up > input:focus {
+  border: 1px solid #fdc029 !important;
 }
 
 .sig-up-btn {

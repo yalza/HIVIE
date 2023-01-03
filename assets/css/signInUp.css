@@ -60,7 +60,7 @@
     left: 0px;
     top: 23px;
     background: #1b1b1b;
-    border: none;
+    outline: #fdc029;
     border-radius: 7px;
     margin-left: 3.2rem;
     margin-top: 5px;
@@ -79,13 +79,15 @@
     line-height: 17px;
     display: flex;
     align-items: center;
-  
+    
     color: #b3b3b3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 3.2rem;
   }
+
+ 
   
   .save__infor input {
     background: #ffffff;
@@ -188,13 +190,16 @@
     left: 0px;
     top: 23px;
     background: #1b1b1b;
-    border: none;
+    outline: #fdc029;
     border-radius: 7px;
     margin-left: 3.2rem;
     margin-top: 5px;
     margin-bottom: 1.5rem;
     padding-left: 1rem;
     color: #fff;
+  }
+  .sig__up > input:focus{
+    border: 1px solid #fdc029 !important;
   }
   
   .sig-up-btn {
